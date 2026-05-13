@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Poema Studios · Photo + Film · Joe & Breanne Genuino · Pomona</title>
+<!-- ============================================================
+     POEMA STUDIOS · Pomona, CA · photo + film, weddings, brand
+     Build target: Vercel preview · single index.html
+     Direction: PROOF SHEET · darkroom · Chinagraph red marks
+     Signature: scroll-linked grease-pencil pick + GENUINO→GENUINE reveal
+     ============================================================ -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="description" content="Poema Studios — photo and film by Joe and Breanne Genuino. Weddings, brand, headshots, and studio rental inside the Pomona Packing Plant. 560 E Commercial St, Pomona, CA.">
+<meta property="og:title" content="Poema Studios · Photo + Film · Pomona">
+<meta property="og:description" content="Genuine isn't a style — it's our last name. Photo + film by Joe & Breanne Genuino, since the week we got married.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:wght@300..700&family=Spline+Sans+Mono:wght@300..700&family=Caveat:wght@500;600;700&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Poema Studios",
+  "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200",
+  "@id": "https://poemastudios.com",
+  "url": "https://poemastudios.com",
+  "telephone": "+12135526059",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "560 E Commercial St #19",
+    "addressLocality": "Pomona",
+    "addressRegion": "CA",
+    "postalCode": "91767",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }]
+}
+</script>
+
+<style>
+/* ============= RESET ============= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+body {
+  background: var(--ink);
+  color: var(--emulsion);
+  font-family: 'Funnel Sans', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: clip;
+  min-height: 100vh;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; border: 0; background: none; cursor: pointer; color: inherit; }
+ul, ol { list-style: none; }
+::selection { background: var(--chinagraph); color: var(--emulsion); }
+
+/* ============= TOKENS — darkroom palette ============= */
+:root {
+  --ink: #0A0A0A;            /* darkroom black */
+  --ink-2: #131313;          /* frame border ink */
+  --ink-3: #1B1B1B;          /* card surface */
+  --emulsion: #E8E2D6;       /* cool bone, photo paper edge */
+  --emulsion-2: #C6BFB1;     /* dimmer caption text */
+  --emulsion-3: #8C887D;     /* faintest metadata */
+  --chinagraph: #D62828;     /* grease-pencil red */
+  --chinagraph-deep: #A21D1D;
+  --safelight: #6B0E0E;      /* darkroom safelight glow */
+
+  --container: min(1320px, 92vw);
+  --gutter: clamp(20px, 4vw, 64px);
+  --ease: cubic-bezier(.22,.7,.2,1);
+  --ease-mark: cubic-bezier(.55,.1,.25,1.2);
+}
+
+/* ============= TYPE ============= */
+.display {
+  font-family: 'Funnel Display', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  line-height: .96;
+  letter-spacing: -.025em;
+}
+.display-xl {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 700;
+  font-size: clamp(40px, 7.6vw, 108px);
+  line-height: .9;
+  letter-spacing: -.035em;
+}
+.display-lg {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 4.6vw, 64px);
+  line-height: .96;
+  letter-spacing: -.028em;
+}
+.mono, .meta {
+  font-family: 'Spline Sans Mono', ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--emulsion-2);
+}
+.mono-sm {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--emulsion-3);
+}
+.hand {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+  color: var(--chinagraph);
+}
+
+/* ============= INLINE OPENER (replaces fixed nav) ============= */
+.opener {
+  border-bottom: 1px solid rgba(232,226,214,.13);
+  padding: 22px 0;
+  position: relative;
+}
+.opener-inner {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.wordmark {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -.01em;
+  text-transform: uppercase;
+}
+.wordmark .dot { color: var(--chinagraph); margin: 0 4px; }
+.sheet-counter {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .25em;
+  color: var(--emulsion-3);
+  text-transform: uppercase;
+  display: flex; align-items: center; gap: 12px;
+}
+.sheet-counter .rule {
+  width: 28px; height: 1px; background: var(--emulsion-3); display: inline-block;
+}
+
+/* ============= HERO ============= */
+.hero {
+  position: relative;
+  padding: clamp(48px, 9vw, 120px) 0 clamp(72px, 11vw, 140px);
+}
+.hero-inner {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.2fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: end;
+}
+.hero-frame-wrap {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1;
+  transform: translateY(0);
+}
+.hero-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--ink-2);
+  overflow: hidden;
+  border: 1px solid rgba(232,226,214,.18);
+  /* offset slightly off-grid for asymmetry */
+  transform: translateX(-2%);
+}
+.hero-frame img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: contrast(1.05) saturate(.95);
+}
+.hero-frame-meta {
+  position: absolute;
+  bottom: 10px; left: 10px; right: 10px;
+  display: flex; justify-content: space-between; align-items: flex-end;
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 9px; letter-spacing: .25em; text-transform: uppercase;
+  color: var(--emulsion);
+  text-shadow: 0 1px 6px rgba(0,0,0,.5);
+}
+/* CSS Chinagraph circle — drawn over photo, never SVG illustration */
+.mark-circle {
+  position: absolute;
+  top: 6%; right: 6%;
+  width: 38%; aspect-ratio: 1;
+  border: 3.5px solid var(--chinagraph);
+  border-radius: 50%;
+  transform: rotate(-12deg) scale(.6);
+  opacity: 0;
+  transition: opacity .5s var(--ease), transform .9s var(--ease-mark);
+  pointer-events: none;
+  /* slight wobble from a perfect circle — feels hand-drawn */
+  border-top-width: 4.5px;
+  border-left-width: 3px;
+  border-right-width: 4px;
+  border-bottom-width: 3.5px;
+  filter: drop-shadow(0 0 0.3px var(--chinagraph));
+}
+.mark-circle.active {
+  opacity: 1;
+  transform: rotate(-8deg) scale(1);
+}
+.hero .mark-circle { /* hero circle is always lit */
+  opacity: 1;
+  transform: rotate(-8deg) scale(1);
+}
+.hero-copy {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: end;
+  padding-bottom: clamp(8px, 2vw, 32px);
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 28px;
+  color: var(--chinagraph);
+}
+.hero-eyebrow .dash {
+  width: 36px; height: 2px; background: var(--chinagraph); display: inline-block;
+}
+.hero h1 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(36px, 6.4vw, 92px);
+  line-height: .98;
+  letter-spacing: -.03em;
+  margin-bottom: 24px;
+}
+.hero h1 .strike {
+  position: relative;
+  display: inline-block;
+  color: var(--emulsion-2);
+}
+.hero h1 .strike::after {
+  content: '';
+  position: absolute; left: -3%; right: -3%;
+  top: 54%;
+  height: 5px;
+  background: var(--chinagraph);
+  transform: rotate(-2.2deg);
+  border-radius: 2px;
+}
+.hero h1 .last-name {
+  color: var(--chinagraph);
+  font-style: italic;
+  font-weight: 700;
+}
+.hero-sub {
+  font-family: 'Funnel Sans', sans-serif;
+  font-size: clamp(15px, 1.6vw, 19px);
+  line-height: 1.5;
+  color: var(--emulsion-2);
+  max-width: 44ch;
+  margin-bottom: 36px;
+}
+.hero-actions {
+  display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center;
+}
+.btn {
+  font-family: 'Funnel Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .04em;
+  padding: 16px 28px;
+  border: 1px solid var(--emulsion);
+  background: var(--emulsion);
+  color: var(--ink);
+  transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+}
+.btn:hover { background: var(--chinagraph); border-color: var(--chinagraph); color: var(--emulsion); }
+.btn-ghost {
+  background: transparent;
+  color: var(--emulsion);
+  border-color: rgba(232,226,214,.4);
+}
+.btn-ghost:hover { background: transparent; border-color: var(--chinagraph); color: var(--chinagraph); }
+.tel-line {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 12px;
+  letter-spacing: .18em;
+  color: var(--emulsion-2);
+  text-transform: uppercase;
+}
+.tel-line a { color: var(--emulsion); border-bottom: 1px solid rgba(232,226,214,.3); padding-bottom: 2px; }
+.tel-line a:hover { color: var(--chinagraph); border-color: var(--chinagraph); }
+
+/* hero margin scribble — caveat hand */
+.hero-scribble {
+  position: absolute;
+  font-family: 'Caveat', cursive;
+  color: var(--chinagraph);
+  font-size: clamp(22px, 2.6vw, 36px);
+  font-weight: 600;
+  line-height: 1;
+  transform: rotate(-7deg);
+  pointer-events: none;
+}
+.hero-scribble.tl {
+  top: 8%; left: -2%;
+}
+.hero-scribble.br {
+  bottom: 6%; right: 4%;
+  transform: rotate(4deg);
+}
+@media (max-width: 860px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .hero-copy { grid-column: 1; grid-row: 2; }
+  .hero-frame-wrap { grid-row: 1; }
+  .hero-frame { transform: none; }
+  .hero-scribble.tl { display: none; }
+  .hero-scribble.br { right: 8%; }
+}
+
+/* ============= THE SHEET (signature) ============= */
+.sheet {
+  border-top: 1px solid rgba(232,226,214,.13);
+  padding: clamp(56px, 9vw, 120px) 0 clamp(80px, 12vw, 160px);
+  position: relative;
+}
+.sheet-head {
+  width: var(--container);
+  margin: 0 auto clamp(40px, 6vw, 88px);
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 40px;
+  align-items: end;
+}
+.sheet-head h2 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(32px, 4.6vw, 68px);
+  line-height: .98;
+  letter-spacing: -.025em;
+}
+.sheet-head h2 em { font-style: italic; color: var(--chinagraph); font-weight: 700; }
+.sheet-head p {
+  color: var(--emulsion-2);
+  max-width: 38ch;
+  font-size: clamp(14px, 1.4vw, 17px);
+}
+.sheet-grid {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(14px, 2.2vw, 28px);
+}
+@media (max-width: 1024px) {
+  .sheet-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 680px) {
+  .sheet-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .sheet-head { grid-template-columns: 1fr; gap: 20px; }
+}
+
+.frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--ink-2);
+  border: 1px solid rgba(232,226,214,.15);
+  overflow: hidden;
+  transition: filter .5s var(--ease), border-color .4s var(--ease);
+}
+.frame img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: contrast(1.05) saturate(.9) brightness(.92);
+  transition: filter .5s var(--ease), transform 1.2s var(--ease);
+}
+.frame .frame-num {
+  position: absolute;
+  top: 8px; left: 8px;
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 9px; letter-spacing: .25em;
+  color: var(--emulsion);
+  background: rgba(10,10,10,.55);
+  padding: 3px 6px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0,0,0,.4);
+}
+.frame.active {
+  border-color: var(--chinagraph);
+}
+.frame.active img {
+  filter: contrast(1.08) saturate(1) brightness(1);
+}
+.frame.killed {
+  filter: brightness(.55) contrast(.95);
+}
+/* the X mark for killed frames — two CSS lines, not SVG */
+.mark-x {
+  position: absolute; inset: 8% 8%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s var(--ease);
+}
+.mark-x::before, .mark-x::after {
+  content: ''; position: absolute;
+  top: 50%; left: 0; right: 0; height: 3px;
+  background: var(--chinagraph);
+  transform-origin: center;
+  border-radius: 2px;
+}
+.mark-x::before { transform: translateY(-50%) rotate(28deg); }
+.mark-x::after  { transform: translateY(-50%) rotate(-28deg); }
+.frame.killed .mark-x { opacity: 1; }
+
+/* SCRIBBLE BAND — interrupts grid between rows */
+.scribble-band {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 4px;
+  border-top: 1px dashed rgba(232,226,214,.18);
+  border-bottom: 1px dashed rgba(232,226,214,.18);
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.scribble-band .lhs {
+  font-family: 'Caveat', cursive;
+  color: var(--chinagraph);
+  font-weight: 600;
+  font-size: clamp(28px, 3.4vw, 46px);
+  line-height: 1;
+  transform: rotate(-2deg);
+}
+.scribble-band .lhs .ko {
+  color: var(--emulsion-3);
+  text-decoration: line-through;
+  text-decoration-color: var(--chinagraph);
+  text-decoration-thickness: 3px;
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.05em;
+  margin-right: 16px;
+  font-style: normal;
+}
+.scribble-band .lhs .rw {
+  font-family: 'Caveat', cursive;
+  color: var(--chinagraph);
+}
+.scribble-band .rhs {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .25em;
+  color: var(--emulsion-3);
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* ============= SECTION 3 — WHAT WE SHOOT ============= */
+.shoot {
+  border-top: 1px solid rgba(232,226,214,.13);
+  background: var(--ink);
+  padding: clamp(56px, 9vw, 120px) 0 clamp(72px, 11vw, 140px);
+}
+.shoot-inner {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.shoot-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: end;
+  margin-bottom: clamp(36px, 5vw, 72px);
+}
+.shoot-head h2 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 4.4vw, 60px);
+  line-height: 1;
+  letter-spacing: -.025em;
+}
+.shoot-head p { color: var(--emulsion-2); max-width: 42ch; font-size: clamp(14px, 1.4vw, 17px); }
+@media (max-width: 768px) { .shoot-head { grid-template-columns: 1fr; gap: 16px; } }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(232,226,214,.13);
+  border: 1px solid rgba(232,226,214,.13);
+}
+@media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+.card {
+  background: var(--ink);
+  padding: clamp(28px, 3.4vw, 44px) clamp(24px, 3vw, 40px);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  position: relative;
+  min-height: clamp(360px, 48vw, 460px);
+}
+.card .num {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px; letter-spacing: .25em;
+  color: var(--chinagraph);
+  text-transform: uppercase;
+}
+.card h3 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.05;
+  letter-spacing: -.02em;
+  color: var(--emulsion);
+}
+.card p {
+  color: var(--emulsion-2);
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.55;
+  max-width: 32ch;
+}
+.card .deets {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px; letter-spacing: .14em;
+  color: var(--emulsion-3);
+  text-transform: uppercase;
+  border-top: 1px dashed rgba(232,226,214,.18);
+  padding-top: 14px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.card .deets span strong { color: var(--emulsion); font-weight: 600; }
+
+/* tape marks at corners — subtle attribution that this is a "sheet" */
+.card::before, .card::after {
+  content: '';
+  position: absolute;
+  width: 22px; height: 8px;
+  background: rgba(214,40,40,.18);
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+.card::before { top: 10px; left: -8px; }
+.card::after { bottom: 14px; right: -6px; transform: rotate(8deg); }
+
+/* ============= SECTION 4 — THE STUDIO ============= */
+.studio {
+  border-top: 1px solid rgba(232,226,214,.13);
+  padding: clamp(56px, 9vw, 120px) 0 clamp(72px, 11vw, 140px);
+}
+.studio-inner {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: stretch;
+}
+@media (max-width: 900px) { .studio-inner { grid-template-columns: 1fr; gap: 32px; } }
+
+.studio-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--ink-2);
+  border: 1px solid rgba(232,226,214,.18);
+  overflow: hidden;
+}
+.studio-frame img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: contrast(1.05) saturate(.85) brightness(.95);
+}
+.studio-frame .meta {
+  position: absolute;
+  bottom: 14px; left: 14px; right: 14px;
+  display: flex; justify-content: space-between;
+  color: var(--emulsion);
+  text-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+.studio-info {
+  display: flex; flex-direction: column; justify-content: space-between;
+  gap: 32px;
+  padding: 8px 0;
+}
+.studio-info h2 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(28px, 4vw, 56px);
+  line-height: 1;
+  letter-spacing: -.025em;
+  margin-bottom: 16px;
+}
+.studio-info p.lede {
+  color: var(--emulsion-2);
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.55;
+  max-width: 38ch;
+}
+.studio-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 14px;
+  column-gap: 28px;
+  align-items: baseline;
+  border-top: 1px solid rgba(232,226,214,.18);
+  padding-top: 24px;
+}
+.studio-table dt {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 10px; letter-spacing: .25em;
+  color: var(--emulsion-3);
+  text-transform: uppercase;
+}
+.studio-table dd {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 500;
+  font-size: clamp(15px, 1.4vw, 18px);
+  color: var(--emulsion);
+  position: relative;
+}
+.studio-table dd .ring {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 2px solid var(--chinagraph);
+  border-radius: 999px;
+  transform: rotate(-2deg);
+  color: var(--emulsion);
+  font-weight: 600;
+}
+.studio-info .come-watch {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+  color: var(--chinagraph);
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.15;
+  transform: rotate(-1.5deg);
+  max-width: 30ch;
+}
+
+/* ============= SECTION 5 — CLOSE ============= */
+.close {
+  border-top: 1px solid rgba(232,226,214,.13);
+  padding: clamp(64px, 10vw, 140px) 0 clamp(72px, 10vw, 120px);
+  text-align: center;
+  position: relative;
+}
+.close-inner {
+  width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.close .eyebrow {
+  display: inline-flex; align-items: center; gap: 14px;
+  color: var(--chinagraph);
+  margin-bottom: 32px;
+}
+.close .eyebrow .dash {
+  width: 36px; height: 2px; background: var(--chinagraph); display: inline-block;
+}
+.close h2 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(34px, 6vw, 88px);
+  line-height: .98;
+  letter-spacing: -.03em;
+  max-width: 18ch;
+  margin: 0 auto 28px;
+}
+.close h2 em {
+  font-style: italic;
+  color: var(--chinagraph);
+  font-weight: 700;
+}
+.close p.sub {
+  color: var(--emulsion-2);
+  font-size: clamp(15px, 1.5vw, 18px);
+  max-width: 42ch;
+  margin: 0 auto 44px;
+}
+.close-actions {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+}
+.close .signoff {
+  margin-top: 56px;
+  display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px; letter-spacing: .22em;
+  color: var(--emulsion-3);
+  text-transform: uppercase;
+}
+.close .signoff a { color: var(--emulsion-2); border-bottom: 1px solid rgba(232,226,214,.2); padding-bottom: 2px; }
+.close .signoff a:hover { color: var(--chinagraph); border-color: var(--chinagraph); }
+
+/* ============= FOOTER FINEPRINT ============= */
+footer {
+  border-top: 1px solid rgba(232,226,214,.1);
+  padding: 22px var(--gutter);
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 10px; letter-spacing: .22em;
+  color: var(--emulsion-3);
+  text-transform: uppercase;
+}
+
+/* ============= MOBILE STICKY CTA (appears past hero) ============= */
+.sticky-cta {
+  position: fixed;
+  bottom: 16px; right: 16px;
+  z-index: 60;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s var(--ease), transform .35s var(--ease);
+  transform: translateY(8px);
+}
+.sticky-cta.on {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.sticky-cta a {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--chinagraph);
+  color: var(--emulsion);
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-family: 'Funnel Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .04em;
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+.sticky-cta a::before {
+  content: '';
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--emulsion);
+  box-shadow: 0 0 0 4px rgba(232,226,214,.18);
+}
+@media (max-width: 720px) {
+  .sticky-cta { display: block; }
+}
+
+/* ============= REDUCED MOTION ============= */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition: none !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .mark-circle { opacity: 1 !important; transform: rotate(-8deg) scale(1) !important; }
+  .frame.killed { filter: none; }
+  .frame.killed .mark-x { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============= OPENER (inline, no fixed nav) ============= -->
+<header class="opener">
+  <div class="opener-inner">
+    <div class="wordmark">POEMA <span class="dot">·</span> STUDIOS</div>
+    <div class="sheet-counter">
+      <span>SHEET ONE</span><span class="rule"></span><span>12 FRAMES</span><span class="rule"></span><span>POMONA · CA</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============= HERO ============= -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-inner">
+    <div class="hero-frame-wrap">
+      <div class="hero-frame">
+        <!-- STOCK_PLACEHOLDER · swap with Genuino selects post-sign -->
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1100&q=70&auto=format&fit=crop" alt="A couple holds hands at sunset — placeholder for Poema Studios' actual wedding work" loading="eager" decoding="async">
+        <div class="mark-circle" aria-hidden="true"></div>
+        <div class="hero-frame-meta">
+          <span>FRAME 01</span>
+          <span>PICK ✓</span>
+        </div>
+      </div>
+      <div class="hero-scribble tl" aria-hidden="true">first frame</div>
+      <div class="hero-scribble br" aria-hidden="true">→ keep</div>
+    </div>
+
+    <div class="hero-copy">
+      <div class="hero-eyebrow">
+        <span class="dash"></span>
+        <span class="mono">Photo &amp; Film · Pomona Packing Plant</span>
+      </div>
+      <h1>
+        Genuine isn't a style —<br>
+        it's our <span class="last-name">last name</span>.
+      </h1>
+      <p class="hero-sub">Photo and film by Joe and Breanne <strong style="color:var(--emulsion); font-weight:600;">Genuino</strong> — booking weddings, brand work, and the studio itself since the week we got married.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#close">Book a call</a>
+        <a class="btn btn-ghost" href="#sheet">See the sheet</a>
+        <span class="tel-line">Or call <a href="tel:+12135526059">(213) 552-6059</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= THE SHEET · signature ============= -->
+<section class="sheet" id="sheet" aria-label="Proof sheet">
+  <div class="sheet-head">
+    <h2>The proof sheet. <em>Pick by pick.</em></h2>
+    <p>Twelve frames from the last year of weddings and shoots — what we kept, what got cut. The red marks are ours.</p>
+  </div>
+
+  <div class="sheet-grid" id="sheetGrid">
+    <!-- Row 1: frames 1–4 -->
+    <div class="frame" data-pick="keep" data-caption="The first look">
+      <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — bride and groom first look" loading="lazy" decoding="async">
+      <span class="frame-num">02</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="kill">
+      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — ceremony exit" loading="lazy" decoding="async">
+      <span class="frame-num">03</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="keep" data-caption="Dad, before walking out">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — sunset portrait" loading="lazy" decoding="async">
+      <span class="frame-num">04</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="keep" data-caption="Headshots, team shoot">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — corporate headshot" loading="lazy" decoding="async">
+      <span class="frame-num">05</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+
+    <!-- SCRIBBLE BAND — the brand reveal -->
+    <div class="scribble-band" aria-hidden="true">
+      <div class="lhs">
+        <span class="ko">Genuino</span><span class="rw">↳ genuine</span>
+      </div>
+      <div class="rhs">
+        Same word.<br>One is the family name.
+      </div>
+    </div>
+
+    <!-- Row 2: frames 6–9 -->
+    <div class="frame" data-pick="keep" data-caption="Joshua Tree, engagement">
+      <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — desert engagement" loading="lazy" decoding="async">
+      <span class="frame-num">06</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="kill">
+      <img src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — reception detail" loading="lazy" decoding="async">
+      <span class="frame-num">07</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="keep" data-caption="The dress, hanging">
+      <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — wedding dress" loading="lazy" decoding="async">
+      <span class="frame-num">08</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="keep" data-caption="Podcast, take 4">
+      <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — podcast recording" loading="lazy" decoding="async">
+      <span class="frame-num">09</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+
+    <!-- Row 3: frames 10–13 -->
+    <div class="frame" data-pick="kill">
+      <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — bouquet" loading="lazy" decoding="async">
+      <span class="frame-num">10</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="keep" data-caption="Vows, hand on knee">
+      <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — vows" loading="lazy" decoding="async">
+      <span class="frame-num">11</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="keep" data-caption="Studio rental — band shoot">
+      <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — studio space band" loading="lazy" decoding="async">
+      <span class="frame-num">12</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+    <div class="frame" data-pick="keep" data-caption="Last frame, leaving the venue">
+      <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&q=65&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — getaway car" loading="lazy" decoding="async">
+      <span class="frame-num">13</span>
+      <div class="mark-circle"></div>
+      <div class="mark-x"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= WHAT WE SHOOT ============= -->
+<section class="shoot" id="shoot" aria-label="What we shoot">
+  <div class="shoot-inner">
+    <div class="shoot-head">
+      <h2>Three rooms, one team.</h2>
+      <p>Joe shoots video. Breanne shoots photo. Everything below the line lives at one address.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="num">01 · The wedding day</span>
+        <h3>Photo and film, start to send-off.</h3>
+        <p>Documentary by default. We give direction when it helps and shut up when it doesn't. Most couples book the photo+film bundle so the day is covered without a second crew.</p>
+        <div class="deets">
+          <span><strong>Coverage</strong> · Up to 8 hours</span>
+          <span><strong>Deliverable</strong> · Gallery + highlight film</span>
+          <span><strong>Engagement session</strong> · Included</span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="num">02 · Brand &amp; headshots</span>
+        <h3>For teams that don't want to look like every other team.</h3>
+        <p>On-location or here at the studio — headshots, lifestyle, campaign, product. Past clients include Cinelease, Zello, FORM Activewear, and Stonovia.</p>
+        <div class="deets">
+          <span><strong>Setup</strong> · 1–2 shooters</span>
+          <span><strong>Turnaround</strong> · Talk to us</span>
+          <span><strong>Podcast filming</strong> · On request</span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="num">03 · Studio rental</span>
+        <h3>Rent the room itself.</h3>
+        <p>Our packing-plant studio is open for outside shoots, small productions, workshops, and events. Bring your own crew. We'll keep the lights up.</p>
+        <div class="deets">
+          <span><strong>Address</strong> · 560 E Commercial #19</span>
+          <span><strong>Hours</strong> · Mon–Sat 9–5</span>
+          <span><strong>Booking</strong> · Hourly or day rate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= THE STUDIO ============= -->
+<section class="studio" aria-label="The studio">
+  <div class="studio-inner">
+    <div class="studio-frame">
+      <!-- STOCK_PLACEHOLDER · swap with photo of actual Pomona Packing Plant exterior or interior post-sign -->
+      <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?w=900&q=70&auto=format&fit=crop" alt="STOCK_PLACEHOLDER — industrial brick studio interior, stand-in for the Pomona Packing Plant" loading="lazy" decoding="async">
+      <div class="mark-circle" style="top:auto; bottom:8%; left:8%; right:auto;"></div>
+      <div class="meta">
+        <span class="mono-sm">SUITE 19</span>
+        <span class="mono-sm">560 E COMMERCIAL</span>
+      </div>
+    </div>
+
+    <div class="studio-info">
+      <div>
+        <h2>Come watch your film here.</h2>
+        <p class="lede">We're inside the Pomona Packing Plant — the historic arts colony off Commercial Street. When your wedding film is ready, we'd rather screen it for you in the studio than send a download link.</p>
+      </div>
+
+      <dl class="studio-table">
+        <dt>Address</dt>
+        <dd>560 E Commercial St · Suite 19 · Pomona, CA 91767</dd>
+        <dt>Phone</dt>
+        <dd><span class="ring">(213) 552-6059</span></dd>
+        <dt>Hours</dt>
+        <dd>Mon–Sat · 9:00 – 5:00 · Closed Sunday</dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:hello@poemastudios.com" style="border-bottom:1px solid rgba(232,226,214,.3);">hello@poemastudios.com</a></dd>
+      </dl>
+
+      <div class="come-watch">"Drive in, park out front, walk to suite 19."</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= CLOSE ============= -->
+<section class="close" id="close" aria-label="Get in touch">
+  <div class="close-inner">
+    <div class="eyebrow">
+      <span class="dash"></span>
+      <span class="mono">SHEET ONE · 12 / 12</span>
+      <span class="dash"></span>
+    </div>
+    <h2>Tell us the date <em>and the room.</em></h2>
+    <p class="sub">Wedding, brand shoot, or the studio for the afternoon — same two people pick up the phone either way.</p>
+    <div class="close-actions">
+      <a class="btn" href="tel:+12135526059">Call (213) 552-6059</a>
+      <a class="btn btn-ghost" href="mailto:hello@poemastudios.com">Email hello@poemastudios.com</a>
+    </div>
+    <div class="signoff">
+      <span><a href="https://www.instagram.com/poemastudios/" target="_blank" rel="noopener">@poemastudios</a></span>
+      <span><a href="https://www.instagram.com/poemaweddingevents/" target="_blank" rel="noopener">@poemaweddingevents</a></span>
+      <span>Joe · Breanne · Genuino</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© Poema Studios · Joe &amp; Breanne Genuino</span>
+  <span>560 E Commercial St #19 · Pomona, CA 91767</span>
+</footer>
+
+<!-- ============= MOBILE STICKY CTA ============= -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="tel:+12135526059">Call Poema</a>
+</div>
+
+<script>
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* === Sticky CTA: appear once user is past hero === */
+  const sticky = document.getElementById('stickyCta');
+  const hero = document.querySelector('.hero');
+  if (sticky && hero) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        sticky.classList.toggle('on', !e.isIntersecting);
+      });
+    }, { threshold: 0, rootMargin: '-40% 0px 0px 0px' });
+    io.observe(hero);
+  }
+
+  /* === Proof sheet: scroll-linked Chinagraph circle on the active "keep" frames,
+        X on the "kill" frames as they enter the viewport === */
+  const frames = document.querySelectorAll('.frame');
+  if (!frames.length) return;
+
+  if (reduceMotion) {
+    /* Static state — all picks marked at once, no scroll choreography */
+    frames.forEach(f => {
+      if (f.dataset.pick === 'keep') {
+        f.classList.add('active');
+        const c = f.querySelector('.mark-circle');
+        if (c) c.classList.add('active');
+      } else {
+        f.classList.add('killed');
+      }
+    });
+    return;
+  }
+
+  /* Scroll-linked: as a frame approaches viewport center, mark it.
+     "keep" → circle in. "kill" → X in. We track the most-central frame and
+     mark it; subsequent frames stay marked once they're past (a real proof
+     sheet doesn't un-mark — once you pick, you've picked). */
+  const markFrame = (f) => {
+    if (f.dataset.marked) return;
+    f.dataset.marked = '1';
+    if (f.dataset.pick === 'keep') {
+      f.classList.add('active');
+      const c = f.querySelector('.mark-circle');
+      if (c) {
+        /* Stagger the circle in slightly for hand-drawn feel */
+        setTimeout(() => c.classList.add('active'), 80);
+      }
+    } else {
+      f.classList.add('killed');
+    }
+  };
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting && e.intersectionRatio > 0.5) {
+        markFrame(e.target);
+      }
+    });
+  }, { threshold: [0.5, 0.7], rootMargin: '0px 0px -10% 0px' });
+
+  frames.forEach(f => obs.observe(f));
+})();
+</script>
+
+</body>
+</html>
