@@ -4,46 +4,50 @@
 
 **Source:** "Genuino" is Joe & Breanne's literal surname (poema.wedding/about). The words *genuine / authentic / real / raw / quirky* appear in their own copy ("raw, authentic human connection") AND in 12+ verbatim reviews on Birdeye, Yelp, and the wedding site's homepage testimonials.
 
-**Direction: PROOF SHEET.** The site is a photographer's marked-up contact sheet — a darkroom-coded grid of frames with red Chinagraph (grease-pencil) annotations layered over real photos. The reveal is the family-name pun written into the margin.
+**Direction: THE LETTER.** The whole page is a handwritten letter from Joe and Breanne to a prospective couple. Warm cream paper, sepia ink, the letter's salutation reveals the pun, the signature at the bottom seals it. *(First pass was a dark proof-sheet contact grid — Donna called it "too SaaS" / wrong palette for a warm wedding photographer. This pivot returns to their actual aesthetic register.)*
 
-**Signature (the one moment):** As you scroll the proof sheet, a hand-drawn red Chinagraph circle lands on one frame at a time (CSS over real photo, never drawn illustration). Margin captions name the pick. Halfway down the sheet, the wordmark in the margin gets struck through — "~~GENUINO~~ GENUINE" — handwritten. No second motion device. Everything else is ambient grain on photo only.
+**Signature (the one moment):** The page ends with Joe + Breanne's big Caveat handwritten signature — and below it a P.S. line that names the pun out loud: *"P.S. — Our last name means 'genuine.' We promise we didn't plan it that way."* The signature IS where the pun belongs. You sign your last name. That's the place.
 
-**Palette:** Darkroom ink `#0A0A0A` · emulsion bone `#E8E2D6` (cool, not cream) · Chinagraph red `#D62828`. One sharp accent, two neutrals, no brass/gold, no warm paper.
+**Palette:** Aged-letter cream `#F1E6BE` · ink charcoal `#1F1812` · sepia hand `#5E3A1C` · single warm accent terracotta `#B45F36` (stamps, seals). No red, no black, no brass/gold. Warm and quiet — the photographer's room, not the designer's studio.
 
-**Type:** **Funnel Display** (display + wordmark — distinct modern grotesque, hasn't appeared in recent BRIEFs) + **Spline Sans Mono** (proof-sheet captions, Chinagraph counter labels — fresher than IBM Plex / JetBrains).
+**Type:** **Lora** (warm humanist serif body — fresh face vs Magic Door's Cormorant/Spectral and Ferguson's DM Serif) + **Caveat** (the family's handwriting throughout) + **Funnel Display** for one wordmark moment. No typewriter/Courier (A&R territory), no italic-serif display (banned), no grotesque-led body (no SaaS).
 
-**Nav:** No fixed top nav. Hero opens with an inline "SHEET ONE · 12 FRAMES" header strip that scrolls away. Sticky-bottom CTA pill appears only past the hero on mobile (single phone button + text link, off-center — not bottom-strip like Ferguson's).
+**Nav:** None — only a small letterhead at the top reading **POEMA STUDIOS · 560 E COMMERCIAL · POMONA, CA**. The whole page reads top to bottom like a letter. Anchor-only CTAs.
 
-**Hero shape:** Off-grid asymmetric. Frame 01 sits left-of-center, real wedding photo with a CSS Chinagraph circle in the corner. Headline floats *beside* the frame, not above or below it. Single declarative sentence — no italic-em, no three-beat, no list.
+**Hero shape:** No "headline." The page opens with a salutation. *"Dear future couples,"* in big handwriting. Then two body paragraphs in Lora that reveal the surname pun in the first sentence. A small scatter of "photos clipped to the letter" on the right. No three-beat, no italic-em, no asymmetric photo+headline duo — just a letter that begins.
 
-**Differs from last 5 on:** palette (cool darkroom + red, vs. 4 warm), type-class (clean grotesque, vs. 4 serif/slab/typewriter), hero shape (marked-up off-grid proof sheet, unique), nav (no-fixed-nav inline opener, distinct from top / left rail / bottom strip).
+**Differs from last 5 on:** palette (warm aged-letter cream + terracotta, no recent demo used terracotta accent), type-class (Lora body — fresh vs Cormorant/Spectral/DM Serif/Courier/Archivo), hero shape (open-letter format, completely distinct), nav (none — letterhead-only).
 
 **Hooks for post-sign customization:**
-1. Swap stock photo placeholders for their own 10–12 wedding selects (assets exist, just plug in).
-2. Add Spanish parallel line under the hero — *"Genuino" works identically in both languages, the bilingual layer they're missing in a Latino-majority city.*
-3. Unify two-brand funnel — single "What are you booking?" toggle (wedding · commercial · studio rental) replaces the two-domain confusion below the hero.
+1. Swap stock photos with Joe & Breanne's real wedding selects + their actual portrait from poema.wedding/about.
+2. Add a Spanish parallel salutation under the English one — *"Querido futuro pareja"* — the bilingual layer they're missing.
+3. Unify the two-brand funnel by tucking a "and if you're a brand, not a wedding..." paragraph mid-letter (or P.P.S.) — kills the two-domain confusion in their own voice.
 
 **Section budget (5 total):**
-1. **Hero** — contact-sheet header strip + Frame 01 photo with Chinagraph circle + headline beside it + 1-sentence sub
-2. **The Sheet (signature)** — 12-frame proof grid, scroll-linked Chinagraph marks land on actives, margin captions name picks, ~~Genuino~~ → Genuine handwritten halfway through
-3. **What we shoot** — three editorial cards (Wedding day · Brand + headshots · Studio rental) with one plainspoken line each, no corporate "Strategy/Production/Distribution"
-4. **The studio** — one tall frame of the Pomona Packing Plant location, the "come watch your wedding film here" detail, 213 number called out as a Chinagraph mark on the address card
-5. **Close** — single line ask + two CTAs (book a call · text us)
+1. **Hero / opening of letter** — letterhead, salutation, two paragraphs (the pun is in paragraph 1), small photo scatter, handwritten margin note
+2. **The work attached** — "Here are some photos we love" + a casual photo gallery scattered across the page with handwritten captions ("this one's our favorite")
+3. **The three things we do** — letter continues, three short paragraphs not a card grid: wedding day · brand & headshots · studio rental, each with a small marginal photo
+4. **The invitation** — "When your film is ready, come watch it here" + studio photo + address written as a handwritten return address
+5. **Sign-off / signature** — "Yours, Joe + Breanne Genuino" in big handwriting + the P.S. pun reveal + two CTAs styled as wax-stamp marks
 
-**Hero copy:**
-- Headline: **"Genuine isn't a style — it's our last name."**
-- Sub: *"Photo + film by Joe and Breanne Genuino, since the week we got married."*
-- CTA: *Book a call*
+**Hero copy (opening paragraphs, in Lora body):**
+> Our last name is **Genuino** — it means *genuine*, or *real*, or *no fake stuff*. We promise we didn't plan it.
+>
+> We're Joe and Breanne. We started photographing weddings the week of our own. We work out of a converted packing plant in Pomona — photo, film, and the studio itself if you need the room.
+
+**Signature P.S. (the reveal, in Caveat hand at the bottom):**
+> *P.S. Genuino = genuine. Same word in Spanish. We just live up to it.*
 
 **Verifiable facts only:**
 - Joe + Breanne Genuino, married 2017, started Poema days later
 - 560 E Commercial St #19, Pomona · (213) 552-6059 · Mon–Sat 9–5
 - Pomona Packing Plant / Arts Colony location
 - Linguistic fact: "Genuino" = "genuine"
-- Real review phrases lifted verbatim
+- Real review phrases lifted verbatim where used
 - No invented backstory, no fake testimonials, no fabricated numbers
 
 ---
 
 ## Status log
-- 2026-05-12: BRIEF written, awaiting Donna's approval before Phase 3 build.
+- 2026-05-12 v1: Proof-sheet darkroom build deployed at https://poema-studios.vercel.app — Donna rejected ("too SaaS, why is it black and red") — wrong register for a warm wedding photographer.
+- 2026-05-12 v2: Pivoted to **The Letter** direction. Same One Thing, completely different wrapper. Rebuilding.
